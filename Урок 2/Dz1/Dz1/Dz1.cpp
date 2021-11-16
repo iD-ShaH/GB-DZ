@@ -27,7 +27,7 @@ using namespace std;
 
 
 // Cоздание enum (крестики нолики) + массив + вивод
-
+/*
 enum ME { z, c, e };
 
 int main()
@@ -43,3 +43,37 @@ int main()
     }
     return 0;
 }
+*/
+// Создание обычной структуры структуры + вывод
+/*
+struct Product // тип данных "Продукт"
+{
+    string title;             // Название товара;
+    long barcode;             // Штрих-код товара;
+    unsigned int quantity;    // Количество товара; 
+    double price;             // Цена товара; 
+};
+int main()
+{
+    setlocale(LC_ALL, "ru");
+
+    Product n1;
+    n1.title = "Coca - Cola";
+    n1.barcode = 101;
+    n1.quantity = 2;
+    n1.price = 1.3;
+    int a;
+    cout << "Введите штрих-код товара: " << endl;
+    cin >> a;
+    if (a == n1.barcode)
+    {
+        cout << "Название товара: " << n1.title << endl;
+        cout << "Остаток: " << n1.quantity << endl;
+        cout << "Цена за едницу: " << n1.price << endl;
+    }
+    else
+        cout << "Ошибка. Такого товара не существует!" << endl;
+
+    return 0;
+}
+*/
