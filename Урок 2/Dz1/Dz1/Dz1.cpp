@@ -44,7 +44,7 @@ int main()
     return 0;
 }
 */
-// Создание обычной структуры структуры + вывод
+// Создание обычной структуры + вывод
 /*
 struct Product // тип данных "Продукт"
 {
@@ -77,3 +77,35 @@ int main()
     return 0;
 }
 */
+
+// Сщздание структуры с union + фраги и вывод на экран
+
+/* struct MyVaruant
+{
+    unsigned int isInt : 1;
+    unsigned char isChar : 1;
+    unsigned float isFloat : 1;
+};
+union MyData     // Обьединение "Дата"
+{
+    int day;     // День;
+    char months; // Месяц;
+    float year;  // Год;
+};*/
+    
+const int ZP = 5;
+
+int main()
+{
+
+    int arr[ZP] { 11, 22, 33, 44, 55};
+    int * pA = &arr[0];
+    *pA++;
+    *pA = 42;
+    cout << *pA << endl;
+
+    
+   
+    return 0;
+
+}
